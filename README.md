@@ -31,15 +31,15 @@
 
 ## 📸 Screenshots
 
-> *(Add your app screenshots here — Home page, Add Employee form, Employee list, Edit page)*
+<!-- > *(Add your app screenshots here — Home page, Add Employee form, Employee list, Edit page)* -->
 
 | Home / Dashboard | Add Employee |
 |:-:|:-:|
-| `screenshot_home.png` | `./screenshots./add employees.png` |
+| `---------------` | (screenshots/add_employees.png) |
 
 | Employee List | Edit Employee |
 |:-:|:-:|
-| `./screenshots./View employees.png` | `./screenshots./Edit employees.png` |
+| (screenshots/View_employees.png) | (screenshots/Edit_employees.png) |
 
 ---
 
