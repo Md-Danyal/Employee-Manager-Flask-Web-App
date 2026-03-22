@@ -39,7 +39,7 @@
 
 | Employee List | Edit Employee |
 |:-:|:-:|
-| ![View Employees](screenshots/View_employees.png) | ![Edit Employee](screenshots/Edit_employees.png) |
+| ![View Employees](screenshots/View_employee.png) | ![Edit Employee](screenshots/Edit_employee.png) |
 
 ---
 
