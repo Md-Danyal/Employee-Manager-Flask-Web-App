@@ -35,11 +35,11 @@
 
 | Home / Dashboard | Add Employee |
 |:-:|:-:|
-| `---------------` | (screenshots/add_employees.png) |
+| `---------------` | ![Add Employee](screenshots/add_employees.png) |
 
 | Employee List | Edit Employee |
 |:-:|:-:|
-| (screenshots/View_employees.png) | (screenshots/Edit_employees.png) |
+| ![View Employees](screenshots/View_employees.png) | ![Edit Employee](screenshots/Edit_employees.png) |
 
 ---
 
