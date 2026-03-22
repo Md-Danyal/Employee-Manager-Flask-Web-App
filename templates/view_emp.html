@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+{% block title %}View Employees{% endblock %}
+{% block content %}
+
+  <div class="main">
+    <form action="{{ url_for('view_employee',id=employee.employee_id) }}" method="POST">
+      <div class="home-form">
+        <span>
+          Name: <span class="box">{{ employee.employee_name }}</span>
+        </span>
+      </div>
+      <div class="home-form">
+        <span><label for="email">Email: </label>
+          <input type="email" name="employee_email" id="email" value="{{ employee.employee_email }}"> 🖊️
+        </span>
+      </div>
+      <div class="home-form">
+        <span><label for="phone">Phone: </label>
+          <input type="tel" name="employee_phone" id="phone" value="{{ employee.employee_phone }}"> 🖊️
+        </span>
+      </div>
+      <div class="home-form">
+        <span>DOB: <span class="box">{{ employee.employee_dob }}</span>
+        </span>
+      </div>
+      <div class="home-form">
+        <span>Gender: <span class="box">{{ employee.employee_gender }}</span>
+        </span>
+      </div>
+      <div class="home-form">
+        <span><label for="address">Address: </label>
+          <textarea name="employee_address" id="address" value="{{ employee.employee_address }}">{{ employee.employee_address }}</textarea> 🖊️
+        </span>
+      </div>
+      <div class="home-form"><input type="submit" value="Update"></div>
+    </form>
+  </div>
+
+{% endblock %}

@@ -1,0 +1,168 @@
+/*! CSS FOR BASE.HTML */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #333;
+  color: #f0f2f5;
+}
+
+nav{
+  height: 5vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: royalblue;
+}
+
+a{
+  text-decoration: none;
+}
+
+nav > a{
+  font-size: 25px;
+  margin: 0 1.7em;
+  padding: 0 1em;
+  color: #f0f2f5;
+  border: 1.5px solid #111;
+  border-radius: 20px;
+}
+
+nav > a:hover{
+  background: #f0f2f5;
+  color: royalblue;
+}
+
+/*! CSS FOR HOME.HTML */
+
+.main {
+  width: 35vw;
+  margin: 40px auto;
+  background: #111;
+  padding: 1.9em;
+  border-radius: 21px;
+  box-shadow: 0 2px 8px rgba(255, 255, 255, 0.669);
+  transition: all 1.5s ease-in-out;
+}
+
+.main h1 {
+  margin-bottom: 24px;
+  /* font-size: 22px; */
+  text-align: center;
+  /* color: #222; */
+  color: #357abd;
+}
+
+.home-form {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 16px;
+}
+
+.home-form label {
+  /* font-size: 14px; */
+  margin-bottom: 6px;
+  color: #4a90e2;
+}
+
+.home-form input,
+.home-form select,
+.home-form textarea,
+.home-form .box {
+  padding: 8px 10px;
+  border: 2px solid royalblue;
+  border-radius: 15px;
+  transition: border-color 0.2s;
+}
+
+.home-form input[type="submit"] {
+  /* background: #4a90e2; */
+  background-color: #357abd;
+  color: #111;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  font-size: 20px;
+  border-radius: 15px;
+}
+
+.home-form input[type="submit"]:hover {
+  background: #333;
+  color: #4a90e2;
+}
+
+.main:hover{
+  transform: scale(1.03);
+}
+
+/*! CSS FOR VIEWS_EMPLOYEES.HTML */
+
+.emp-datas{
+  width: 80vw;
+}
+
+.emp-datas:hover{
+  transform: scale(1.02);
+}
+
+#titles, .datas {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  gap: 8px;
+  padding: 10px 12px;
+}
+
+#titles {
+  background: #4a90e2;
+  color: #111;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+.datas {
+  border-bottom: 1px solid #eee;
+  color: #f0f0f0;
+}
+
+.datas:hover {
+  background: #1743a7;
+}
+
+.datas a {
+  padding: 3px 8px;
+  border-radius: 4px;
+}
+
+.datas span:nth-last-child(2) a {
+  background: #e8f0fe;
+  color: #4a90e2;
+}
+
+.datas span:nth-last-child(2) a:hover {
+  background: #4a90e2;
+  color: #fff;
+}
+
+.datas span:last-child a {
+  background: #fdecea;
+  color: #e53935;
+}
+
+.datas span:last-child a:hover {
+  background: #e53935;
+  color: #fff;
+}
+
+/*! CSS FOR VIEW_EMP.HTML */
+
+.home-form > span{
+  color: #4a90e2;
+}
+
+.home-form .box{
+  background-color: #fff;
+  color: #1743a7;
+}

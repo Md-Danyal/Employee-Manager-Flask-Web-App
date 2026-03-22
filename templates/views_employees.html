@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% block title %}View Employees{% endblock %}
+{% block content %}
+
+  <div class="main emp-datas">
+    <h1>Employee Datas</h1>
+    <div id="titles">
+      <span>Employee Name</span>
+      <span>Email</span>
+      <span>Phone</span>
+      <span>DOB</span>
+      <span>Gender</span>
+      <span>Address</span>
+      <span>Actions</span>
+      <span>Delete</span>
+    </div>
+    {% for employee in employees %}
+    <div class="datas">
+      <span>{{ employee.employee_name }}</span>
+      <span>{{ employee.employee_email }}</span>
+      <span>{{ employee.employee_phone }}</span>
+      <span>{{ employee.employee_dob }}</span>
+      <span>{{ employee.employee_gender }}</span>
+      <span>{{ employee.employee_address }}</span>
+      <span><a href="{{ url_for('view_employee',id=employee.employee_id) }}">View/Edit</a></span>
+      <span><a href="{{ url_for('delete_employee',id=employee.employee_id)}}">Delete</a></span>
+    </div>
+    {% endfor %}
+  </div>
+{% endblock %}
